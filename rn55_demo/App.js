@@ -95,7 +95,7 @@ export default class App extends Component{
   }
 
   initOcr(){
-    BaiduOcrScan.init("54NnLhU8fx1PNx5PRhyYSV3H","j315x30ojW6hSVpjEuhnId3sU40Vgap2",(data)=>{
+    BaiduOcrScan.init("","",(data)=>{
       console.log(`初始化成功 code=${data}`);
      });
   }
