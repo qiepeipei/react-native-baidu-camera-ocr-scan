@@ -1,28 +1,44 @@
 ![Mou icon1](/assets/a1.png)
 ![Mou icon1](/assets/a2.png)
 
+- [添加监听](#添加监听)
 - [初始化](#初始化)
+
+## 添加监听
+必须先执行此操作
+`
+
+    componentDidMount(){
+        this.subscription = BaiduOcrScan.addListener();
+    }
+    componentWillUnmount(){
+        this.subscription?this.subscription.remove():null;
+    }`
+
+
 
 ## 初始化
 单调用相机 相册 二维码扫描 二维码生成是不需要初始化的,其他识别类功能必须先初始化
 
-`ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
+ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 
-``BaiduOcrScan.init("ak","sk",(data)=>{
+    BaiduOcrScan.init("ak","sk",(data)=>{
       console.log(`初始化成功`);
-});``
+    });
+
 
 
 
 ### 使用实例
 参考[App.js](https://github.com/qiepeipei/react-native-baidu-camera-ocr-scan/blob/master/rn55_demo/App.js)
-      
+
+
 # 使用方法
-## npm i react-native-clear-cache -save
+## npm i react-native-baidu-camera-ocr-scan -save
 
 ## 自动配置
 执行此命令
-#### react-native link
+#### react-native link react-native-baidu-camera-ocr-scan
 
 ## 手动配置
 #### android配置
@@ -31,8 +47,8 @@
     ```
     ...
     
-    include ':reactNativeClearCache'
-    project(':reactNativeClearCache').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-clear-cache/android')
+    include ':ReactNativeBaiduOcrScan'
+    project(':ReactNativeBaiduOcrScan').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-baidu-camera-ocr-scan/android')
     
     ```
 
@@ -42,14 +58,13 @@
     ...
     dependencies {
         ...
-        compile project(':reactNativeClearCache')
+        compile project(':ReactNativeBaiduOcrScan')
     }
     ```
     
 3. 注册模块 (到 MainApplication.java)
 
-    ```
-   import com.example.qiepeipei.react_native_clear_cache.ClearCachePackage;
+
    
     public class MainApplication extends Application implements ReactApplication {
       ......
