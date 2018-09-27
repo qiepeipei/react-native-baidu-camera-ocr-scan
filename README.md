@@ -9,6 +9,7 @@
 必须先执行此操作
 `
 
+    import BaiduOcrScan from './react-native-baidu-ocr-scan';
     componentDidMount(){
         this.subscription = BaiduOcrScan.addListener();
     }
