@@ -41,6 +41,9 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 执行此命令
 #### react-native link react-native-baidu-camera-ocr-scan
 
+注意ios必须手动执行后续操作才可以使用
+- [ios后续步骤](#ios后续步骤)
+
 ## 手动配置
 #### android配置
 1. 设置 `android/setting.gradle`
@@ -83,6 +86,8 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 
 ### ios配置
 
-1. 右键 Libraries 选择Add Files To "项目名" 进入../node_modules/react-native-clear-cache/ios/目录 选择RCTClearCacheModule.xcodeproj 添加
+1. 右键 Libraries 选择Add Files To "项目名" 进入../node_modules/react-native-baidu-camera-ocr-scan/ios/目录 选择RCTBaiDuOcrModule.xcodeproj 添加
 
-2. 在项目Build Phases下的Link Binary With Libraries 下 添加libRCTClearCacheModule.a库文件
+2. 在项目Build Phases下的Link Binary With Libraries 下 添加 libRCTBaiDuOcrModule.a 库文件
+
+### ios后续步骤
