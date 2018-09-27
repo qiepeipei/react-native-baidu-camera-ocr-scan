@@ -84,7 +84,7 @@ type =
 
 ## 二维码扫描
 
-     BaiduOcrScan.createQRCode("momo",(data)=>{
+     BaiduOcrScan.createQRCode("要生成二维码的字符串",(data)=>{
           console.log("生成二维码成功,输出结果");
           console.log(data);
       });
