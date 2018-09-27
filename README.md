@@ -4,6 +4,10 @@
 - [添加监听](#添加监听)
 - [初始化](#初始化)
 - [识别调用](#识别调用)
+- [相机调用](#相机调用)
+- [相册调用](#相册调用)
+- [二维码生成](#二维码生成)
+- [二维码扫描](#二维码扫描)
 - [使用实例](#使用实例)
 - [安装方法](#安装方法)
 ## 添加监听
@@ -44,7 +48,35 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
     });
 
 
+## 相机调用
 
+    BaiduOcrScan.callCamera((data)=>{
+          console.log("输出调用相机回调");
+          console.log(data);
+    });
+
+
+## 相册调用
+
+     BaiduOcrScan.callAlbum((data)=>{
+          console.log("输出调用相册回调");
+          console.log(data);
+     });
+
+## 二维码扫描
+
+     BaiduOcrScan.createQRCode("momo",(data)=>{
+          console.log("生成二维码成功,输出结果");
+          console.log(data);
+      });
+
+
+## 二维码扫描
+
+      BaiduOcrScan.callQRCode((data)=>{
+           console.log("输出二维码扫描结果");
+           console.log(data);
+      });
 
 
 
