@@ -1,6 +1,5 @@
-# react-native-clear-cache
-react native 清除缓存第三方库
-![Mou icon1](/assets/a1.gif)
+![Mou icon1](/assets/a1.png)
+![Mou icon1](/assets/a2.png)
 ### 导出方法
 - `getCacheSize` - 获取缓存大小
     - `@callBack` - Function - 回调函数
