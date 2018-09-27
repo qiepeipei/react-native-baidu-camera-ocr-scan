@@ -1,17 +1,11 @@
 ![Mou icon1](/assets/a1.png)
 ![Mou icon1](/assets/a2.png)
-### 导出方法
-- `getCacheSize` - 获取缓存大小
-    - `@callBack` - Function - 回调函数
-        - `@cacheSize` - String - 缓存大小
-        - `@unit` - String - 缓存大小单位(B KB MB G)
 
-# 
+- [初始化](#sending-feedback)
 
-- `runClearCache` - 清除缓存
-    - `@callBack` - Function - 回调函数
+## Sending Feedback
 
-# 
+We are always open to [your feedback](https://github.com/facebook/create-react-app/issues).
 
 ### 使用实例
 
