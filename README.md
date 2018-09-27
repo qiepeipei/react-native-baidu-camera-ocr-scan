@@ -3,6 +3,7 @@
 
 - [添加监听](#添加监听)
 - [初始化](#初始化)
+- [识别调用](#识别调用)
 - [使用实例](#使用实例)
 - [安装方法](#安装方法)
 ## 添加监听
@@ -27,6 +28,22 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
     BaiduOcrScan.init("ak","sk",(data)=>{
       console.log(`初始化成功`);
     });
+
+
+## 识别调用
+
+    BaiduOcrScan.ocr(type,(data)=>{
+          console.log("输出调用识别回调");
+          console.log(data);
+          if(data.error == 0){
+            //识别成功
+          }else{
+            //识别失败
+          }
+
+    });
+
+
 
 
 
