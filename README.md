@@ -1,9 +1,54 @@
 ![Mou icon1](/assets/a1.png)
 ![Mou icon1](/assets/a2.png)
 
-- [初始化](#sending-feedback)
+- [初始化](#初始化)
 
-## Sending Feedback
+## 初始化
+	import clear from 'react-native-clear-cache';
+
+	constructor () {
+        super();
+        this.state = {
+          cacheSize:"",
+          unit:"",
+        }
+        clear.getCacheSize((value,unit)=>{
+          this.setState({
+            cacheSize:value, //缓存大小
+            unit:unit  //缓存单位
+          })
+        });
+
+      }
+
+      render() {
+        return (
+          <View style={{flex: 1,justifyContent: 'center',alignItems: 'center'}}>
+            <Text style={{fontSize: 20,textAlign: 'center',margin: 10}}>
+              缓存大小{this.state.cacheSize}{this.state.unit}
+            </Text>
+            <Button title="清除缓存" onPress={this.clearCache.bind(this)}/>
+          </View>
+        );
+      }
+
+      clearCache(){
+
+        clear.runClearCache(()=>{
+
+          console.log("清除成功");
+
+        clear.getCacheSize((value,unit)=>{
+          this.setState({
+            cacheSize:value, //缓存大小
+            unit:unit  //缓存单位
+          })
+        });
+
+        });
+
+      }
+
 
 We are always open to [your feedback](https://github.com/facebook/create-react-app/issues).
 
