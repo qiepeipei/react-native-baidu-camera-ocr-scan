@@ -35,6 +35,25 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 
 
 ## 识别调用
+type为识别类型
+
+type =
+
+"CAMERA" //银行卡识别
+
+"CARD_FRONT" //身份证正面识别
+
+"CARD_BACK" //身份证反面识别
+
+"BUSINESS_LICENSE" //营业执照识别
+
+"PLATE_LICENSE" //车牌识别
+
+"DRIVER_LICENSE" //驾驶证识别
+
+"DRIVING_LICENSE" //行驶证识别
+
+"GENERAL_BILL" //通用票据识别
 
     BaiduOcrScan.ocr(type,(data)=>{
           console.log("输出调用识别回调");
