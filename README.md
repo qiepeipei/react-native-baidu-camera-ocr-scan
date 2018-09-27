@@ -13,53 +13,9 @@
 });``
 
 
-### 使用实例
 
-	import clear from 'react-native-clear-cache';
-	
-	constructor () {
-        super();
-        this.state = {
-          cacheSize:"",
-          unit:"",
-        }
-        clear.getCacheSize((value,unit)=>{
-          this.setState({
-            cacheSize:value, //缓存大小
-            unit:unit  //缓存单位
-          })
-        });
-        
-      }
-      
-      render() {
-        return (
-          <View style={{flex: 1,justifyContent: 'center',alignItems: 'center'}}>
-            <Text style={{fontSize: 20,textAlign: 'center',margin: 10}}>
-              缓存大小{this.state.cacheSize}{this.state.unit}
-            </Text>
-            <Button title="清除缓存" onPress={this.clearCache.bind(this)}/>
-          </View>
-        );
-      }
-      
-      clearCache(){
-    
-        clear.runClearCache(()=>{
-    
-          console.log("清除成功");
-    
-        clear.getCacheSize((value,unit)=>{
-          this.setState({
-            cacheSize:value, //缓存大小
-            unit:unit  //缓存单位
-          })
-        });
-          
-        });
-    
-      }
-      
+### 使用实例
+参考[App.js](https://github.com/qiepeipei/react-native-baidu-camera-ocr-scan/blob/master/rn55_demo/App.js)
       
 # 使用方法
 ## npm i react-native-clear-cache -save
