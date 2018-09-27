@@ -4,7 +4,7 @@
 - [添加监听](#添加监听)
 - [初始化](#初始化)
 - [使用实例](#使用实例)
-- [使用方法](#使用方法)
+- [安装方法](#安装方法)
 ## 添加监听
 必须先执行此操作
 `
@@ -34,7 +34,7 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 参考[App.js](https://github.com/qiepeipei/react-native-baidu-camera-ocr-scan/blob/master/rn55_demo/App.js)
 
 
-# 使用方法
+### 安装方法
 ## npm i react-native-baidu-camera-ocr-scan -save
 
 ## 自动配置
