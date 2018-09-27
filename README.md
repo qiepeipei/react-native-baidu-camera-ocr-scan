@@ -9,7 +9,7 @@
 必须先执行此操作
 `
 
-    import BaiduOcrScan from './react-native-baidu-ocr-scan';
+    import BaiduOcrScan from 'react-native-baidu-ocr-scan';
     componentDidMount(){
         this.subscription = BaiduOcrScan.addListener();
     }
@@ -92,3 +92,4 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 2. 在项目Build Phases下的Link Binary With Libraries 下 添加 libRCTBaiDuOcrModule.a 库文件
 
 ### ios后续步骤
+![Mou icon1](/assets/a3.png)
