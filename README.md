@@ -3,7 +3,8 @@
 
 - [添加监听](#添加监听)
 - [初始化](#初始化)
-
+- [使用实例](#使用实例)
+- [使用方法](#使用方法)
 ## 添加监听
 必须先执行此操作
 `
@@ -55,9 +56,7 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 2. 设置 `android/app/build.gradle`
 
     ```
-    ...
     dependencies {
-        ...
         compile project(':ReactNativeBaiduOcrScan')
     }
     ```
@@ -65,7 +64,7 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 3. 注册模块 (到 MainApplication.java)
 
 
-   
+    import com.baidu.BaiDuOcrPackage;
     public class MainApplication extends Application implements ReactApplication {
       ......
 
@@ -73,14 +72,14 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
     	protected List<ReactPackage> getPackages() {
       		return Arrays.<ReactPackage>asList(
           			new MainReactPackage(),
-          			new new ClearCachePackage()      //<--- 添加
+          			new new BaiDuOcrPackage()      //<--- 添加
       		);
     	} 
 
       ......
 
     }
-    ```
+
 
 ### ios配置
 
