@@ -4,53 +4,14 @@
 - [初始化](#初始化)
 
 ## 初始化
-	import clear from 'react-native-clear-cache';
+单调用相机 相册 二维码扫描 二维码生成是不需要初始化的,其他识别类功能必须先初始化
 
-	constructor () {
-        super();
-        this.state = {
-          cacheSize:"",
-          unit:"",
-        }
-        clear.getCacheSize((value,unit)=>{
-          this.setState({
-            cacheSize:value, //缓存大小
-            unit:unit  //缓存单位
-          })
-        });
+`ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 
-      }
+``BaiduOcrScan.init("ak","sk",(data)=>{
+      console.log(`初始化成功`);
+});``
 
-      render() {
-        return (
-          <View style={{flex: 1,justifyContent: 'center',alignItems: 'center'}}>
-            <Text style={{fontSize: 20,textAlign: 'center',margin: 10}}>
-              缓存大小{this.state.cacheSize}{this.state.unit}
-            </Text>
-            <Button title="清除缓存" onPress={this.clearCache.bind(this)}/>
-          </View>
-        );
-      }
-
-      clearCache(){
-
-        clear.runClearCache(()=>{
-
-          console.log("清除成功");
-
-        clear.getCacheSize((value,unit)=>{
-          this.setState({
-            cacheSize:value, //缓存大小
-            unit:unit  //缓存单位
-          })
-        });
-
-        });
-
-      }
-
-
-We are always open to [your feedback](https://github.com/facebook/create-react-app/issues).
 
 ### 使用实例
 
