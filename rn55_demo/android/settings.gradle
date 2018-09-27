@@ -1,0 +1,6 @@
+rootProject.name = 'rn55'
+
+include ':app'
+include ':ReactNativeBaiduOcrScan'
+project(':ReactNativeBaiduOcrScan').projectDir = new File(rootProject.projectDir, '../react-native-baidu-ocr-scan/android')
+
