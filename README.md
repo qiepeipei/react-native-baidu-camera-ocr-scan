@@ -81,7 +81,7 @@ type为识别类型
           console.log(data);
      });
 
-## 二维码扫描
+## 二维码生成
 
      BaiduOcrScan.createQRCode("要生成二维码的字符串",(data)=>{
           console.log("生成二维码成功,输出结果");
