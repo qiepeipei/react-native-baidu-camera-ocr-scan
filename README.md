@@ -12,7 +12,7 @@
 - [安装方法](#安装方法)
 ## 添加监听
 必须先执行此操作
-`
+
 
     import BaiduOcrScan from 'react-native-baidu-camera-ocr-scan';
     componentDidMount(){
@@ -20,7 +20,7 @@
     }
     componentWillUnmount(){
         this.subscription?this.subscription.remove():null;
-    }`
+    }
 
 
 
