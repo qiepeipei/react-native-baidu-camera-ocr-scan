@@ -14,7 +14,7 @@
 必须先执行此操作
 `
 
-    import BaiduOcrScan from 'react-native-baidu-ocr-scan';
+    import BaiduOcrScan from 'react-native-baidu-camera-ocr-scan';
     componentDidMount(){
         this.subscription = BaiduOcrScan.addListener();
     }
@@ -37,7 +37,6 @@ ak和sk去这里进行注册' http://ai.baidu.com/tech/ocr
 ## 识别调用
 type为识别类型
 
-type =
 
 "CAMERA" //银行卡识别
 
@@ -104,7 +103,7 @@ type =
 
 
 ### 安装方法
-## npm i react-native-baidu-camera-ocr-scan -save
+#### npm i react-native-baidu-camera-ocr-scan -save
 
 ## 自动配置
 执行此命令
